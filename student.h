@@ -1,0 +1,21 @@
+#ifndef STUDENT_H
+#define STUDENT_H
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+class student{
+ public:
+  student(char* newnamef, char* newnamel, int newid, float newgpa);
+  char* getnamef();
+  char* getnamel();
+  int getid();
+  float getgpa();
+ private:
+  char* namef;
+  char* namel;
+  int id;
+  float gpa;
+};
+#endif
